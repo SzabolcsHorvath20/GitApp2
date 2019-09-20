@@ -11,8 +11,10 @@ namespace GitApp2
         static List<int> szamok = new List<int>();
         static void Bekeres()
         {
-            Console.WriteLine("Kérem adjon meg 10 számot!");
-            for (int i = 0; i < 10; i++)
+            Console.WriteLine("Hány számot szeretne megadni?");
+            int darabszam = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Kérem adjon meg {0} számot!", darabszam);
+            for (int i = 0; i < darabszam; i++)
             {
                 Console.WriteLine(i+1 + ".");
                 int j = Convert.ToInt32(Console.ReadLine());
