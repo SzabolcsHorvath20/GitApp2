@@ -25,7 +25,9 @@ namespace GitApp2
         {
             szamok.Sort();
             int seged = szamok[szamok.Count - 1];
-            Console.WriteLine(seged);
+            int seged2 = szamok[0];
+            Console.WriteLine("A legnagyobb szám: " + seged);
+            Console.WriteLine("A legkisebb szám: " + seged2);
         }
         static void Main(string[] args)
         {
